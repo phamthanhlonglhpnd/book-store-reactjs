@@ -1,0 +1,22 @@
+.manage-book {
+    &-bottom {
+        margin: 15px 0;
+    }
+    &-field {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+    }
+    &-avatar {
+        margin: 15px auto;
+        width: 200px;
+        height: 250px;
+        // border-radius: 50%;
+        box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.15);
+        border: 3px solid orange;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

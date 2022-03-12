@@ -1,0 +1,114 @@
+.header {
+    position: fixed;
+    top: 0; left: 0;
+    right: 0; 
+    background-color: antiquewhite;
+    padding: 10px 30px;
+    z-index: 99999;
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    &-name {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &-middle {
+        position: relative;
+        display: flex;
+        width: 50%;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    &-choose {
+        font-weight: 500;
+    }
+    &-user {
+        width: 20px;
+        height: 20px;
+        &-info {
+            position: absolute;
+            width: 150px;
+            background-color: #A0AAC5;
+            left: -64px;
+            top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+            &::before {
+                content: '';
+                position: absolute;
+                height: 14px;
+                width: 14px;
+                background-color: #A0AAC5;
+                top: -7px;
+                left: 45%;
+                transform: rotate(45deg);
+            }
+        }
+        &-item {
+            padding: 10px 10px;
+            &:hover {
+                color: antiquewhite;
+                cursor: pointer;
+            }
+        }
+    }
+    &-box {
+        position: absolute;
+        top: -10px; right: -10px;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: coral;
+    }
+    &-count {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 12px;
+        transform: translate(-50%, -50%);
+    }
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        &-item {
+            cursor: pointer;
+            color: #B2B2B2;
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color:darkslateblue;
+                transition: width 0.3s linear;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
